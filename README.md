@@ -34,6 +34,11 @@
 > 相关目录映射关系可在项目根目录的docker-compose.yml文件中查看
 
 ## 初始化流程
+
+```shell
+git clone https://github.com/lestat220255/docker-lnmp.git
+cd docker-lnmp && chmod u+x ./init.sh && ./init.sh
+```
 初始化脚本`init.sh`会复制项目所需文件到用户指定的应用目录(防止文件污染),并自动进入到改目录进行后续操作:配置`docker-compose.yml`和php-fpm目录中的`Dockerfile`,并根据这些配置完成`docker`+`docker-compose`相关环境的安装和首次启动
 
 ## 端口映射
